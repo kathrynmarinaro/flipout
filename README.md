@@ -76,17 +76,17 @@ leave breathing room at the edges; the corners get cut away.
 ## Trying a different color palette
 
 `css/palettes.css` holds six alternative schemes, each built around a turquoise.
-The page is currently set to `hifi`. To try another, change the name on the
+The page is currently set to `nightcap`. To try another, change the name on the
 `<html>` tag at the top of `index.html`:
 
 ```html
-<html lang="en" data-palette="nightcap">
+<html lang="en" data-palette="hifi">
 ```
 
 | Name | Turquoise | Supporting color |
 |---|---|---|
-| `hifi` | Bright | Marigold, on warm walnut — **currently active** |
-| `nightcap` | Muted | Marigold, on deep teal and ivory |
+| `hifi` | Bright | Marigold, on warm walnut |
+| `nightcap` | Muted | Marigold, on deep teal and ivory — **currently active** |
 | `lido` | Bright | Coral, on warm walnut |
 | `atomic` | Bright | Marigold, on charcoal and bone |
 | `poolside` | Bright | Flamingo pink, on sand |

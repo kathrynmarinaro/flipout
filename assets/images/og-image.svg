@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Flipout placeholder">
   <defs>
     <pattern id="hatch" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
-      <rect width="34" height="34" fill="#F4E7D2"/>
-      <line x1="0" y1="0" x2="0" y2="34" stroke="#E7D2AF" stroke-width="9"/>
+      <rect width="34" height="34" fill="#E9E2D3"/>
+      <line x1="0" y1="0" x2="0" y2="34" stroke="#D9D0BC" stroke-width="9"/>
     </pattern>
   </defs>
   <rect width="1200" height="630" fill="url(#hatch)"/>
-  <ellipse cx="600" cy="271" rx="264" ry="107" fill="#FBF3E6" opacity="0.92"/>
-  <circle cx="494" cy="252" r="22" fill="#8FC9E9"/>
-  <text x="600" y="328" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#3F2413">Flipout</text>
-  <text x="600" y="374" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#7A4A2B">Social preview — 1200×630</text>
-  <text x="600" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#A67A55">1200 × 630</text>
+  <ellipse cx="600" cy="271" rx="264" ry="107" fill="#F6F1E7" opacity="0.92"/>
+  <circle cx="494" cy="252" r="22" fill="#5FAFA6"/>
+  <text x="600" y="328" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#1F3A38">Flipout</text>
+  <text x="600" y="374" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#3F5F5B">Social preview — 1200×630</text>
+  <text x="600" y="406" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#55706C">1200 × 630</text>
 </svg>
