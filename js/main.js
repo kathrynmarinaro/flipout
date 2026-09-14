@@ -118,28 +118,21 @@
       name: 'Deep Groove',
       species: 'Black walnut',
       desc: 'Dark, chocolatey and a little smoky. The one that looks best against a white wall, and the reason the whole thing started.',
-      light: '#8A5936', base: '#5A3520', dark: '#331B0D'
+      light: '#8A5936', base: '#563220', dark: '#2E180C'
     },
     {
       id: 'cream-soda',
       name: 'Cream Soda',
       species: 'Hard maple',
-      desc: 'Nearly blonde, with a fine close grain. Disappears into pale walls until you get near it, then shows all its figure.',
-      light: '#F0DCB4', base: '#DFC08B', dark: '#B9925C'
-    },
-    {
-      id: 'slow-jam',
-      name: 'Slow Jam',
-      species: 'Cherry',
-      desc: 'Starts warm pink-brown and deepens for years. The only one in the lineup that keeps changing after you hang it.',
-      light: '#C97A4E', base: '#9C4F2C', dark: '#67301A'
+      desc: 'The blonde one. Fine, close grain and almost no figure, so the shape does all the talking.',
+      light: '#F4E4C4', base: '#E6CDA0', dark: '#C0A075'
     },
     {
       id: 'sunroom',
       name: 'Sunroom',
       species: 'White oak',
-      desc: 'Golden and open-grained, with long straight rays. Reads the most midcentury of the four, especially in a triple.',
-      light: '#DDB57C', base: '#C49A5E', dark: '#946B3C'
+      desc: 'Light tan with long straight rays running through it. The most openly grained of the three, and the most midcentury in a triple.',
+      light: '#E7D6B6', base: '#CFB890', dark: '#A08760'
     }
   ];
 
