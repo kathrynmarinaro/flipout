@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="The Single placeholder">
+  <defs>
+    <pattern id="hatch" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <rect width="34" height="34" fill="#F4E7D2"/>
+      <line x1="0" y1="0" x2="0" y2="34" stroke="#E7D2AF" stroke-width="9"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#hatch)"/>
+  <ellipse cx="400" cy="430" rx="176" ry="170" fill="#FBF3E6" opacity="0.92"/>
+  <circle cx="330" cy="400" r="28" fill="#8FC9E9"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="41" font-weight="700" fill="#3F2413">The Single</text>
+  <text x="400" y="579" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="25" fill="#7A4A2B">One cover, flat lay or on-wall</text>
+  <text x="400" y="622" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#A67A55">800 × 1000</text>
+</svg>

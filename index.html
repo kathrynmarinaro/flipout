@@ -17,11 +17,23 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Unbounded:wght@400;500;700;800&display=swap">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Blob clip paths. clipPathUnits="objectBoundingBox" means these scale to whatever
+     box they're applied to, so one path works at every breakpoint. -->
+<svg class="blob-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="blobHero" clipPathUnits="objectBoundingBox"><path d="M0.52,0.02 C0.80,0.01 0.97,0.18 0.95,0.40 C0.93,0.58 0.87,0.66 0.90,0.78 C0.93,0.92 0.72,1.00 0.50,0.98 C0.30,0.96 0.10,0.88 0.06,0.70 C0.02,0.52 0.10,0.44 0.08,0.30 C0.06,0.13 0.28,0.03 0.52,0.02 Z"/></clipPath>
+    <clipPath id="blobSingle" clipPathUnits="objectBoundingBox"><path d="M0.54,0.02 C0.80,0.01 0.95,0.18 0.96,0.38 C0.97,0.56 0.86,0.66 0.88,0.78 C0.90,0.92 0.72,1.00 0.50,0.99 C0.29,0.98 0.10,0.90 0.06,0.72 C0.02,0.55 0.12,0.44 0.09,0.30 C0.06,0.13 0.28,0.03 0.54,0.02 Z"/></clipPath>
+    <clipPath id="blobTriple" clipPathUnits="objectBoundingBox"><path d="M0.46,0.02 C0.70,0.00 0.92,0.06 0.97,0.26 C1.00,0.44 0.96,0.70 0.86,0.84 C0.76,0.97 0.58,0.93 0.42,0.96 C0.24,0.99 0.08,0.96 0.03,0.78 C0.00,0.60 0.02,0.34 0.10,0.18 C0.18,0.04 0.30,0.03 0.46,0.02 Z"/></clipPath>
+    <clipPath id="blobDetail" clipPathUnits="objectBoundingBox"><path d="M0.52,0.03 C0.78,0.01 0.98,0.20 0.96,0.46 C0.94,0.70 0.86,0.96 0.58,0.97 C0.34,0.98 0.08,0.90 0.04,0.64 C0.01,0.42 0.10,0.22 0.22,0.12 C0.32,0.04 0.40,0.04 0.52,0.03 Z"/></clipPath>
+    <clipPath id="blobMaker" clipPathUnits="objectBoundingBox"><path d="M0.48,0.02 C0.74,0.00 0.94,0.16 0.95,0.40 C0.96,0.60 0.84,0.72 0.86,0.84 C0.88,0.96 0.68,1.00 0.46,0.98 C0.26,0.96 0.08,0.86 0.06,0.66 C0.04,0.48 0.14,0.38 0.10,0.24 C0.07,0.10 0.26,0.03 0.48,0.02 Z"/></clipPath>
+  </defs>
+</svg>
 
 <!-- ============ HEADER ============ -->
 <header class="site-header">
@@ -209,12 +221,12 @@
                 <feColorMatrix in="noise" type="saturate" values="0"></feColorMatrix>
                 <feComponentTransfer><feFuncA type="linear" slope="0.22"></feFuncA></feComponentTransfer>
               </filter>
-              <clipPath id="clipSingle"><path d="M230,18 C282,14 322,44 328,96 C334,148 320,222 286,258 C252,294 200,292 172,256 C144,220 128,150 134,96 C140,42 178,22 230,18 Z"></path></clipPath>
-              <clipPath id="clipTriple"><path d="M230,16 C330,10 432,32 448,94 C464,156 438,226 378,254 C318,282 142,280 82,256 C22,232 -4,152 12,92 C28,32 130,22 230,16 Z"></path></clipPath>
+              <clipPath id="clipSingle"><path d="M236,22 C286,16 318,52 322,98 C326,140 344,168 330,204 C316,244 288,288 240,286 C196,284 168,264 158,228 C148,192 128,166 134,126 C140,82 186,28 236,22 Z"></path></clipPath>
+              <clipPath id="clipTriple"><path d="M200,10 C300,2 402,14 438,64 C474,114 458,182 410,224 C362,266 300,250 226,262 C152,274 60,286 26,238 C-8,190 14,110 44,66 C74,22 120,18 200,10 Z"></path></clipPath>
             </defs>
 
             <g data-shape-single>
-              <path class="plate" d="M230,18 C282,14 322,44 328,96 C334,148 320,222 286,258 C252,294 200,292 172,256 C144,220 128,150 134,96 C140,42 178,22 230,18 Z"></path>
+              <path class="plate" d="M236,22 C286,16 318,52 322,98 C326,140 344,168 330,204 C316,244 288,288 240,286 C196,284 168,264 158,228 C148,192 128,166 134,126 C140,82 186,28 236,22 Z"></path>
               <rect class="grain" x="120" y="0" width="230" height="300" clip-path="url(#clipSingle)" filter="url(#grainFilter)"></rect>
               <rect class="opening" x="205" y="104" width="50" height="92" rx="9"></rect>
               <circle class="cap" cx="230" cy="70" r="11"></circle>
@@ -222,7 +234,7 @@
             </g>
 
             <g data-shape-triple hidden>
-              <path class="plate" d="M230,16 C330,10 432,32 448,94 C464,156 438,226 378,254 C318,282 142,280 82,256 C22,232 -4,152 12,92 C28,32 130,22 230,16 Z"></path>
+              <path class="plate" d="M200,10 C300,2 402,14 438,64 C474,114 458,182 410,224 C362,266 300,250 226,262 C152,274 60,286 26,238 C-8,190 14,110 44,66 C74,22 120,18 200,10 Z"></path>
               <rect class="grain" x="0" y="0" width="460" height="300" clip-path="url(#clipTriple)" filter="url(#grainFilter)"></rect>
               <rect class="opening" x="88"  y="104" width="50" height="92" rx="9"></rect>
               <rect class="opening" x="205" y="104" width="50" height="92" rx="9"></rect>
@@ -358,7 +370,7 @@
   </div>
 
   <div class="shell cta-inner">
-    <p class="eyebrow eyebrow--light"><span class="dot" aria-hidden="true"></span> Founding batch</p>
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Founding batch</p>
     <h2 class="display h2">Fifty covers. That's the batch.</h2>
     <p class="cta-lede">
       When the first fifty are finished, the waitlist hears first and gets founding-customer pricing.
