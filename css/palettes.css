@@ -34,6 +34,54 @@
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
+   HI-FI — Bright turquoise + marigold on warm walnut
+   Lido's warm walnut ink and cream ground, Lido's bright turquoise, and Atomic Age's marigold in
+   place of the coral. Marigold against walnut is the more classic midcentury pairing — it's wood
+   and sunshine rather than ink and print. The warmest of the bold options.
+   -------------------------------------------------------------------------- */
+[data-palette="hifi"]{
+  --cream:       #FBF3E6;
+  --cream-2:     #F4E7D2;
+  --cream-3:     #EEDCBE;
+
+  --walnut:      #3F2413;
+  --walnut-deep: #291607;
+  --walnut-mid:  #7A4A2B;
+  --walnut-soft: #8E6347;
+
+  --sky:         #45C9C0;
+  --sky-deep:    #0F7B76;
+  --sky-pale:    #CDEFEB;
+
+  --pop:         #F0B429;
+  --pop-ink:     #291607;
+}
+
+/* --------------------------------------------------------------------------
+   NIGHTCAP — Muted turquoise + marigold on deep teal
+   Supper Club with the brass swapped for a bright marigold. The teal ink and ivory ground stay
+   moody and grown-up, but the yellow cuts through them rather than blending in — less cocktail
+   lounge, more jazz record sleeve.
+   -------------------------------------------------------------------------- */
+[data-palette="nightcap"]{
+  --cream:       #F6F1E7;
+  --cream-2:     #E9E2D3;
+  --cream-3:     #D9D0BC;
+
+  --walnut:      #1F3A38;
+  --walnut-deep: #122523;
+  --walnut-mid:  #3F5F5B;
+  --walnut-soft: #55706C;
+
+  --sky:         #5FAFA6;
+  --sky-deep:    #2A736B;
+  --sky-pale:    #CDE5E1;
+
+  --pop:         #F0B429;
+  --pop-ink:     #122523;
+}
+
+/* --------------------------------------------------------------------------
    LIDO — Bright turquoise + coral on warm walnut
    Closest to where the site started — keeps the walnut ink and cream ground, swaps the sky blue for a brighter turquoise and answers it with coral. Warmest of the six, and the safest bet if you like the current page and just want the blue to sing louder.
    -------------------------------------------------------------------------- */
@@ -177,3 +225,13 @@
   background: var(--pop);
   opacity: .28;
 }
+
+/* --------------------------------------------------------------------------
+   Lets a palette be applied to a wrapper div rather than <html> — used by the
+   hosted preview, harmless in the real page.
+   -------------------------------------------------------------------------- */
+div[data-palette]{
+  background: var(--cream);
+  color: var(--walnut);
+}
+/* PREVIEW WRAPPER */

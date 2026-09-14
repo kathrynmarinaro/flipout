@@ -76,14 +76,17 @@ leave breathing room at the edges; the corners get cut away.
 ## Trying a different color palette
 
 `css/palettes.css` holds six alternative schemes, each built around a turquoise.
-To try one, add its name to the `<html>` tag at the top of `index.html`:
+The page is currently set to `hifi`. To try another, change the name on the
+`<html>` tag at the top of `index.html`:
 
 ```html
-<html lang="en" data-palette="poolside">
+<html lang="en" data-palette="nightcap">
 ```
 
 | Name | Turquoise | Supporting color |
 |---|---|---|
+| `hifi` | Bright | Marigold, on warm walnut — **currently active** |
+| `nightcap` | Muted | Marigold, on deep teal and ivory |
 | `lido` | Bright | Coral, on warm walnut |
 | `atomic` | Bright | Marigold, on charcoal and bone |
 | `poolside` | Bright | Flamingo pink, on sand |
