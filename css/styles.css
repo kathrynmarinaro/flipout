@@ -227,7 +227,30 @@ h1.display{ font-size: clamp(2.6rem, 7.4vw, 4.6rem); }
   gap: clamp(36px, 5vw, 60px);
   align-items: center;
 }
-.wiggle{ display: inline-block; color: var(--sky-deep); }
+
+/* The "Flip on some ___" line. The blank cycles through words; the container
+   animates its width to fit each one so nothing jumps around it. */
+.flip-line{
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  font-size: clamp(1.3rem, 3.4vw, 1.95rem);
+  line-height: 1.15;
+  color: var(--walnut);
+  margin: 0 0 26px;
+}
+.cycle{
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  white-space: nowrap;
+  transition: width .4s cubic-bezier(.65, 0, .35, 1);
+}
+.cycle-word{
+  display: inline-block;
+  color: var(--sky-deep);
+  transition: opacity .26s ease, transform .26s ease;
+}
 
 /* signup */
 .signup-block{ max-width: 34rem; }
@@ -617,4 +640,6 @@ h1.display{ font-size: clamp(2.6rem, 7.4vw, 4.6rem); }
     transition-duration: .001ms !important;
   }
   .ticker-track{ animation: none; }
+  .cycle{ transition: none; }
+  .cycle-word{ transition: none; }
 }

@@ -253,6 +253,79 @@
      3. ODDS AND ENDS
      ====================================================================== */
 
+  /* ----------------------------------------------------------------------
+     The cycling word in "Flip on some ___".
+     Edit WORDS to change what it rotates through. Without JS the line just
+     reads "Flip on some color", which is a perfectly good headline on its own.
+     ---------------------------------------------------------------------- */
+  var WORDS = ['color', 'shape', 'art', 'form', 'curves', 'character'];
+  var WORD_HOLD = 2200;   // ms each word stays up
+  var WORD_FADE = 260;    // ms of the swap itself — keep in sync with the CSS transition
+
+  var cycle = document.querySelector('[data-cycle]');
+  var cycleWord = document.querySelector('[data-cycle-word]');
+  var stillMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  if (cycle && cycleWord && !stillMotion.matches) {
+    // Hidden twin used to measure each word, so the container can size to it.
+    var ruler = document.createElement('span');
+    ruler.setAttribute('aria-hidden', 'true');
+    ruler.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;left:0;top:0;';
+    cycle.appendChild(ruler);
+
+    var index = 0;
+    var timer = null;
+
+    function widthOf(word) {
+      ruler.textContent = word;
+      return Math.ceil(ruler.getBoundingClientRect().width);
+    }
+
+    function fit() {
+      cycle.style.width = widthOf(WORDS[index]) + 'px';
+    }
+
+    function advance() {
+      cycleWord.style.opacity = '0';
+      cycleWord.style.transform = 'translateY(-0.3em)';
+
+      window.setTimeout(function () {
+        index = (index + 1) % WORDS.length;
+        cycleWord.textContent = WORDS[index];
+        fit();
+
+        // Drop in from below without animating the reset itself.
+        cycleWord.style.transition = 'none';
+        cycleWord.style.transform = 'translateY(0.3em)';
+        window.requestAnimationFrame(function () {
+          cycleWord.style.transition = '';
+          cycleWord.style.opacity = '1';
+          cycleWord.style.transform = 'translateY(0)';
+        });
+      }, WORD_FADE);
+    }
+
+    function start() {
+      if (!timer) timer = window.setInterval(advance, WORD_HOLD);
+    }
+    function stop() {
+      window.clearInterval(timer);
+      timer = null;
+    }
+
+    // Measure once the display face is actually loaded, or the width is wrong.
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+    else window.addEventListener('load', fit);
+    fit();
+
+    window.addEventListener('resize', fit);
+    // Don't animate against a tab nobody is looking at.
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) stop(); else start();
+    });
+    start();
+  }
+
   // Duplicate the ticker content so the marquee loops without a visible seam.
   var ticker = document.querySelector('[data-ticker]');
   if (ticker && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
