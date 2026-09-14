@@ -1,0 +1,179 @@
+/* ==========================================================================
+   Flipout — palette options
+   --------------------------------------------------------------------------
+   Six alternative color schemes, each built around a turquoise.
+
+   HOW TO USE
+   1. Link this file AFTER styles.css in index.html:
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/palettes.css">
+   2. Put the palette name on the <html> tag:
+        <html lang="en" data-palette="poolside">
+   3. Remove the attribute to go back to the original blue-and-walnut scheme.
+
+   Once you've chosen, you can paste the winning block's values straight into
+   the :root in styles.css and delete this file — nothing else depends on it.
+
+   WHAT THE TOKENS DO
+     --cream / -2 / -3     page ground, panel ground, edges
+     --walnut              body text and the dark band          (the "ink")
+     --walnut-deep         footer ground, darkest text
+     --walnut-mid          secondary text
+     --walnut-soft         small uppercase labels
+     --sky                 the accent: CTA band, dots, step numbers
+     --sky-deep            the accent as text (the cycling word)
+     --sky-pale            faint decorative washes
+     --pop                 the supporting color: sticker badges, one hero blob
+     --pop-ink             text sitting on --pop
+
+   The names are historical (the first palette was walnut and sky blue). Read
+   them as roles, not colors: --walnut is "ink", --cream is "ground",
+   --sky is "accent".
+
+   Every palette below clears WCAG AA (4.5:1) on all nine text pairings.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   LIDO — Bright turquoise + coral on warm walnut
+   Closest to where the site started — keeps the walnut ink and cream ground, swaps the sky blue for a brighter turquoise and answers it with coral. Warmest of the six, and the safest bet if you like the current page and just want the blue to sing louder.
+   -------------------------------------------------------------------------- */
+[data-palette="lido"]{
+  --cream:       #FBF3E6;
+  --cream-2:     #F4E7D2;
+  --cream-3:     #EEDCBE;
+
+  --walnut:      #3F2413;
+  --walnut-deep: #291607;
+  --walnut-mid:  #7A4A2B;
+  --walnut-soft: #8E6347;
+
+  --sky:         #45C9C0;
+  --sky-deep:    #0F7B76;
+  --sky-pale:    #CDEFEB;
+
+  --pop:         #E2664A;
+  --pop-ink:     #291607;
+}
+
+/* --------------------------------------------------------------------------
+   ATOMIC AGE — Bright turquoise + marigold on bone
+   The most period-accurate: turquoise and marigold is the pairing on half the laminate and vinyl of 1958. Charcoal ink instead of brown makes it read graphic and printed rather than woody. Boldest and most "atomic age" of the set.
+   -------------------------------------------------------------------------- */
+[data-palette="atomic"]{
+  --cream:       #F7F1E4;
+  --cream-2:     #EDE3CE;
+  --cream-3:     #E2D4B8;
+
+  --walnut:      #2C2724;
+  --walnut-deep: #171412;
+  --walnut-mid:  #5A5248;
+  --walnut-soft: #746B5F;
+
+  --sky:         #21C1B6;
+  --sky-deep:    #0A736C;
+  --sky-pale:    #C4EBE7;
+
+  --pop:         #F0B429;
+  --pop-ink:     #171412;
+}
+
+/* --------------------------------------------------------------------------
+   POOLSIDE — Bright turquoise + flamingo on sand
+   Palm Springs. Turquoise against a hot pink, on a sandy pink-cream ground. The most purely joyful and the most fun on a phone — and the furthest from anything that reads as a craft fair.
+   -------------------------------------------------------------------------- */
+[data-palette="poolside"]{
+  --cream:       #FDF4EC;
+  --cream-2:     #F7E6D8;
+  --cream-3:     #F0D7C2;
+
+  --walnut:      #3A2A2E;
+  --walnut-deep: #241619;
+  --walnut-mid:  #6E4E52;
+  --walnut-soft: #886569;
+
+  --sky:         #3ACFC9;
+  --sky-deep:    #0E7E7A;
+  --sky-pale:    #CFF0EE;
+
+  --pop:         #F2789E;
+  --pop-ink:     #241619;
+}
+
+/* --------------------------------------------------------------------------
+   SUPPER CLUB — Muted turquoise + brass on ivory
+   The eccentric one. Deep teal ink instead of brown, a dusty turquoise, and brass rather than a bright pop. Reads like a 1962 cocktail lounge — more grown-up and more unusual, at the cost of some of the playfulness.
+   -------------------------------------------------------------------------- */
+[data-palette="supper"]{
+  --cream:       #F6F1E7;
+  --cream-2:     #E9E2D3;
+  --cream-3:     #D9D0BC;
+
+  --walnut:      #1F3A38;
+  --walnut-deep: #122523;
+  --walnut-mid:  #3F5F5B;
+  --walnut-soft: #55706C;
+
+  --sky:         #5FAFA6;
+  --sky-deep:    #2A736B;
+  --sky-pale:    #CDE5E1;
+
+  --pop:         #C99A3E;
+  --pop-ink:     #122523;
+}
+
+/* --------------------------------------------------------------------------
+   RUMPUS ROOM — Muted turquoise + avocado on warm white
+   Turquoise with avocado green and an olive-brown ink. The most unexpected pairing here, and the one closest to a real midcentury den. Quieter than Atomic or Poolside, and it makes walnut photography look very good.
+   -------------------------------------------------------------------------- */
+[data-palette="rumpus"]{
+  --cream:       #FAF5E8;
+  --cream-2:     #F0E8D3;
+  --cream-3:     #E4D9BD;
+
+  --walnut:      #2F2E22;
+  --walnut-deep: #1B1B13;
+  --walnut-mid:  #585640;
+  --walnut-soft: #737055;
+
+  --sky:         #6BBFB2;
+  --sky-deep:    #2B7C70;
+  --sky-pale:    #D3E9E4;
+
+  --pop:         #8C9A4B;
+  --pop-ink:     #1B1B13;
+}
+
+/* --------------------------------------------------------------------------
+   SEA GLASS — Muted turquoise + clay on oat
+   The softest option. A dusty sea-glass turquoise with a terracotta clay, on an oat ground. Closest to the minimal, muted end of the reference you liked — calm and design-forward, least loud.
+   -------------------------------------------------------------------------- */
+[data-palette="seaglass"]{
+  --cream:       #FAF4EC;
+  --cream-2:     #F0E6DA;
+  --cream-3:     #E4D6C6;
+
+  --walnut:      #3B2E2A;
+  --walnut-deep: #241B18;
+  --walnut-mid:  #6A5650;
+  --walnut-soft: #816A61;
+
+  --sky:         #7FBFB5;
+  --sky-deep:    #2E7A70;
+  --sky-pale:    #D9EAE6;
+
+  --pop:         #A9543B;
+  --pop-ink:     #FAF4EC;
+}
+
+/* --------------------------------------------------------------------------
+   Where --pop is used. These live here rather than in styles.css so the
+   original scheme is untouched when no palette is selected.
+   -------------------------------------------------------------------------- */
+[data-palette] .sticker{
+  background: var(--pop);
+  color: var(--pop-ink);
+}
+[data-palette] .drift-blob--b{
+  background: var(--pop);
+  opacity: .28;
+}

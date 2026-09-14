@@ -73,6 +73,34 @@ leave breathing room at the edges; the corners get cut away.
 
 ---
 
+## Trying a different color palette
+
+`css/palettes.css` holds six alternative schemes, each built around a turquoise.
+To try one, add its name to the `<html>` tag at the top of `index.html`:
+
+```html
+<html lang="en" data-palette="poolside">
+```
+
+| Name | Turquoise | Supporting color |
+|---|---|---|
+| `lido` | Bright | Coral, on warm walnut |
+| `atomic` | Bright | Marigold, on charcoal and bone |
+| `poolside` | Bright | Flamingo pink, on sand |
+| `supper` | Muted | Brass, on deep teal and ivory |
+| `rumpus` | Muted | Avocado, on olive-brown |
+| `seaglass` | Muted | Terracotta clay, on oat |
+
+Remove the attribute to go back to the original blue-and-walnut scheme.
+
+Once you've picked one, you can paste that block's values into the `:root` in
+`styles.css` and delete `palettes.css` — nothing else depends on it.
+
+Every palette clears WCAG AA contrast (4.5:1) on all nine text pairings, so
+whichever you choose stays readable.
+
+---
+
 ## Editing content
 
 **Copy** is all in `index.html` as plain text. The headline, product blurbs, process
