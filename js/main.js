@@ -124,8 +124,8 @@
       id: 'cream-soda',
       name: 'Cream Soda',
       species: 'Hard maple',
-      desc: 'The blonde one. Fine, close grain and almost no figure, so the shape does all the talking.',
-      light: '#F4E4C4', base: '#E6CDA0', dark: '#C0A075'
+      desc: 'Warm honey-tan with a fine, close grain and almost no figure, so the shape does all the talking.',
+      light: '#E8C88C', base: '#D2A868', dark: '#A87F49'
     },
     {
       id: 'sunroom',
