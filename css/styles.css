@@ -228,17 +228,8 @@ h1.display{ font-size: clamp(2.6rem, 7.4vw, 4.6rem); }
   align-items: center;
 }
 
-/* The "Flip on some ___" line. The blank cycles through words; the container
-   animates its width to fit each one so nothing jumps around it. */
-.flip-line{
-  font-family: var(--display);
-  font-weight: 700;
-  letter-spacing: -.02em;
-  font-size: clamp(1.3rem, 3.4vw, 1.95rem);
-  line-height: 1.15;
-  color: var(--walnut);
-  margin: 0 0 26px;
-}
+/* The cycling blank in the "Flip on some ___" headline (hero option B).
+   The container animates its width to each word so nothing jumps around it. */
 .cycle{
   position: relative;
   display: inline-block;
