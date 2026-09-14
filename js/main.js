@@ -281,8 +281,17 @@
       return Math.ceil(ruler.getBoundingClientRect().width);
     }
 
+    // Hold the width of the LONGEST word at all times. Sizing to the current
+    // word instead would let a short one like "art" pull the headline back onto
+    // fewer lines, shunting the whole page up and down as it cycles. The word
+    // sits at the end of a left-aligned line, so the reserved space is just
+    // trailing whitespace — invisible.
     function fit() {
-      cycle.style.width = widthOf(WORDS[index]) + 'px';
+      var widest = 0;
+      for (var i = 0; i < WORDS.length; i++) {
+        widest = Math.max(widest, widthOf(WORDS[i]));
+      }
+      cycle.style.width = widest + 'px';
     }
 
     function advance() {
@@ -292,7 +301,6 @@
       window.setTimeout(function () {
         index = (index + 1) % WORDS.length;
         cycleWord.textContent = WORDS[index];
-        fit();
 
         // Drop in from below without animating the reset itself.
         cycleWord.style.transition = 'none';
