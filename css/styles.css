@@ -409,7 +409,9 @@ h1.display{ font-size: clamp(2.6rem, 7.4vw, 4.6rem); }
 /* `hidden` isn't honored on SVG children by the UA stylesheet — make it work. */
 .preview [hidden]{ display: none; }
 .preview .plate{ fill: url(#woodGrad); transition: fill .3s ease; }
-.preview .grain{ fill: var(--wood-dark); mix-blend-mode: multiply; opacity: .5; pointer-events: none; }
+.preview .grain{ fill: var(--wood-dark); mix-blend-mode: multiply; pointer-events: none; }
+.preview .grain--figure{ opacity: .42; }   /* broad cathedral figure */
+.preview .grain--lines{ opacity: .5; }     /* fine grain lines */
 .preview .opening{ fill: var(--cream); stroke: var(--wood-dark); stroke-width: 2; }
 .preview .cap{ fill: var(--cap-color); stroke: rgba(0,0,0,.22); stroke-width: 1.5; transition: fill .3s ease; }
 

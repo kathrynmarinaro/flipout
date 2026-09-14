@@ -210,7 +210,7 @@
     if (readoutCap)  readoutCap.textContent  = state.cap.name;
 
     if (previewTitle) {
-      previewTitle.textContent = 'Preview of a ' + state.gang + '-gang cover in ' +
+      previewTitle.textContent = 'Preview of a ' + state.gang + '-gang toggle cover in ' +
         state.wood.name + ' ' + state.wood.species.toLowerCase() +
         ' with ' + state.cap.name + ' caps';
     }
